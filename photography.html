@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            color: white;
+            font-family: cursive;
+            background: url('/projects/wildlife.jpg');
+        }
+
+        .header {
+            /* display: inline-block; */
+            /* border: 2px solid red; */
+        }
+
+        .container {
+
+            display: inline-block;
+        }
+
+        #left {
+
+            position: absolute;
+            top: 8px;
+            left: 10px;
+
+        }
+
+        #mid {
+            display: block;
+            width: 40%;
+            margin: 8px auto;
+
+        }
+
+        #right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: 1px solid black;
+
+        }
+
+        #mid ul {
+            overflow: hidden;
+            padding: 0px;
+
+
+
+        }
+
+        #mid {
+            /* the navigation bar */
+            /* background-color: #7de5a7; */
+            padding: 1px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            border: 1px solid black;
+
+
+        }
+
+        .list a {
+            padding: 0px 3px;
+            overflow: hidden;
+            text-decoration: none;
+
+
+        }
+
+
+        .list {
+            float: left;
+            text-decoration: none;
+            list-style: none;
+            margin: 0px;
+            padding: 0px 18px;
+            text-align: center;
+
+        }
+
+        .list a:hover {
+            color: rgb(245, 249, 250);
+        }
+
+        img {
+            width: 80px;
+            height: 60px;
+        }
+
+        .btn {
+            padding: 5px 15px;
+            background-color: #adcced;
+            border-radius: 10px;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(206, 148, 62);
+        }
+
+        h1 {
+            color: black;
+            width: 441px;
+            margin: 20px auto;
+            text-align: center;
+            /* border: 2px solid red; */
+
+
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid rgb(0, 0, 0);
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 0 auto;
+            /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .15em;
+            /* Adjust as needed */
+            animation:
+                typing 6s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: rgb(0, 0, 0);
+            }
+        }
+
+
+        form {
+            display: inline-block;
+            width: 361px;
+            height: 360px;
+            border: 2px solid white;
+            margin: 40px 61px;
+            padding: 30px;
+            border-radius: 30px;
+        }
+
+
+        input {
+            position: relative;
+            margin: 15px;
+            padding: 10px;
+            width: 300px;
+            border-radius: 10px;
+            border: none;
+
+
+        }
+
+        input:placeholder-shown {
+            font-family: cursive;
+        }
+
+        h2 {
+            color: black;
+            font-size: 29px;
+            width: 304px;
+            margin: auto;
+            text-align: center;
+
+        }
+
+        #submit {
+
+            width: 205px;
+            height: 29px;
+            padding: 7px;
+            margin: 10px 77px;
+            border: none;
+            border-radius: 5px;
+            font-family: cursive;
+        }
+
+        #submit:hover {
+            background-color: #aecf9d;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container" id="left">
+            <img src="/projects/photography.png" alt="">
+
+        </div>
+        <div class="container" id="mid">
+            <ul>
+                <li class="list"><a href="#">Home</a></li>
+                <li class="list"><a href="#">About Us</a></li>
+                <li class="list"><a href="#">Services</a></li>
+                <li class="list"><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+        <div class="container" id="right">
+            <button class="btn">Email</button>
+
+        </div>
+
+        </div>
+
+        <h1>KIRAN PHOTOGRAPHY</h1>
+
+    </header>
+
+    <div class="form">
+        <form action="backend.php">
+            <h2>Book your Photoshoot</h2>
+
+            <div>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+
+            <div>
+                <input type="number" name="number" id="number" placeholder="Enter your Number">
+            </div>
+
+            <div>
+                <input type="text" name="email" id="email" placeholder="Enter your email">
+            </div>
+
+            <div>
+                <input type="text" name="Address" id="address" placeholder="Enter your Address">
+            </div>
+
+            <button id="submit">SUBMIT</button>
+
+        </form>
+
+
+    </div>
+</body>
+
+</html>
